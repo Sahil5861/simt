@@ -1,0 +1,102 @@
+.tabs-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 85px;
+    position: relative;
+ }
+
+ /* Tab Buttons */
+ .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ .tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+ }
+
+ .tab-button.active {
+    color: #000;
+    border-bottom: 2px solid red;
+    border-radius: 0;
+ }
+
+ /* Tab Content */
+ .tab-content {
+    display: none; /* Hide all tabs initially */
+    padding: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+ }
+
+ .tab-content.active {
+    display: block; /* Show only active tab */
+ }
+
+ .tab-content-card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px 30px;
+    width: 800px;
+ }  
+ .tab-content h2{
+    font-size: 40px;
+    margin: 0;
+ }
+ .tab-content span{
+    color: red;
+ }
+ .tab-content p{
+    font-size: 18px;
+    color: #000;
+    opacity: .9;
+    margin:20px 0 0;
+}
+
+
+@media screen and (max-width:500px){
+    .tabs-container{
+        width: 90%;                
+        margin: auto;
+    }
+    .tab-content{
+        padding: 33px 20px 37px;
+        margin: 10px 0;
+    }
+
+    .tab-content-card {                
+        width: auto;
+        padding: 27px 19px;
+    }
+    .tab-content p {
+        font-size: 14px;
+        color: #000;
+        opacity: .9;
+        margin: 20px 0 0;
+    }
+    .tab-buttons{
+        overflow: auto;
+    }
+    .tab-button{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .tab-content h2{
+        font-size: 26px;
+    }     
+}     
+
+
+
+
